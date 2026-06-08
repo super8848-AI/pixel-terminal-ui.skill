@@ -1,8 +1,8 @@
 # Pixel Terminal UI Skill
 
-A Codex skill for creating dark macOS-native pixel terminal interfaces: compact black control surfaces, notch/top-bar pill morphology, terminal typography, semantic live states, subtle grain/dither texture, and developer-tool density.
+A Codex skill for creating Vibe Island-inspired dark pixel terminal interfaces: compact black notch controls, pixel/mono typography, semantic live states, binary `01` scatter, god-ray/dither texture, and developer-tool density.
 
-This style was distilled from the Vibe Island / Open Island design language, then generalized so it can be reused in coding products, dashboards, agent monitors, command centers, approval panels, and product intro pages.
+The style is distilled from the public Vibe Island website and generalized for coding products, dashboards, agent monitors, command centers, approval panels, game pages, and product intro pages. Do not copy Vibe Island assets; reuse the design principles.
 
 ## Install
 
@@ -12,7 +12,7 @@ npx skills add super8848-AI/pixel-terminal-ui.skill
 
 ## When To Use
 
-Use this skill when you want a product interface that feels like:
+Use this skill when you want:
 
 - 像素终端风 UI
 - Vibe Island / Open Island inspired UI
@@ -23,25 +23,20 @@ Use this skill when you want a product interface that feels like:
 - compact permission / approval panel
 - game, tool, or product intro page with terminal HUD styling
 
-Example request:
-
-```text
-调用 pixel-terminal-ui skill，帮我生成一个产品介绍 HTML，内容关于热门游戏介绍。
-```
-
 ## Design DNA
 
 The core direction is:
 
-> A dark macOS-native pixel terminal UI: a compact black control surface for developer workflows, blending notch-like pill morphology, terminal typography, semantic agent status colors, subtle grain/dither texture, and restrained glass depth.
+> A dark macOS-native pixel terminal UI: a compact black control surface for developer workflows, blending notch-like pill morphology, pixel/terminal typography, semantic agent status colors, sparse binary scatter, grain, god-ray/dither texture, and restrained glass depth.
 
 Key traits:
 
 - Black or near-black surfaces first, decoration second.
 - Pixel/mono display typography for headings and status labels.
-- Dense terminal rows, command output, code/diff panels, and keyboard hints.
-- Color is semantic: green done, blue running, orange attention, cyan question, red error.
-- Texture is subtle: grain, dither, ASCII scatter, scanline hints.
+- Chinese headings should use pixel-capable CJK fonts such as `Zpix`, `Fusion Pixel`, `Ark Pixel`, or `Noto Sans Mono CJK SC`.
+- Sparse binary/ASCII background uses `0 1 + - * : .`, usually faded from a corner.
+- God-ray light, 128px grain, 4x4 ordered dither, and MacBook/screen fade masks are used subtly.
+- Color is semantic: orange attention/product, green done, blue running, cyan question, purple exploration, red error.
 - UI should feel useful before it feels stylish.
 
 ## Repository Structure
@@ -49,6 +44,7 @@ Key traits:
 ```text
 .
 ├── SKILL.md
+├── README.md
 ├── agents/
 │   └── openai.yaml
 ├── references/
@@ -60,29 +56,19 @@ Key traits:
     └── hot-games-product-intro.prompt.md
 ```
 
-## Files
-
-- `SKILL.md` defines the skill trigger, workflow, and implementation bias.
-- `agents/openai.yaml` provides display metadata for agent UIs.
-- `references/style-guide.md` captures the visual grammar, palette, typography, layout, motion, and avoid rules.
-- `references/component-patterns.md` includes reusable CSS, React component patterns, and ASCII text animation snippets.
-- `references/core-prompt.md` contains an English prompt and a Chinese short prompt for applying the style.
-- `examples/` contains reusable example prompts and implementation directions.
-
 ## Quick Prompt
 
 ```text
-Design a dark macOS-native pixel terminal interface for a developer workflow product. The UI should feel like a compact control surface mounted to the operating system: a black notch/top-bar pill that can expand into a notification or session panel, with dense terminal-inspired rows, code/diff context, keyboard hints, and semantic live states. Blend native macOS restraint with retro terminal texture: pixel/monospace display typography, subtle ASCII scatter, faint grain/noise, ordered dither or soft god-ray texture, pure black surfaces, soft shadows, thin translucent borders, and very limited glass blur. Use color only as state language: green for ready/done, blue for running, orange for permission/attention, cyan for questions, purple only for exploration/tool identity, red for errors. The product should look functional first, not like a generic SaaS landing page. Avoid decorative gradient blobs, heavy neon cyberpunk, beige palettes, oversized cards, and copied Apple/Vibe Island assets. Prioritize a real usable dashboard/control panel over marketing composition.
+做一个参考 Vibe Island 官网气质但不复制素材的暗黑像素终端风 macOS 原生控制界面：纯黑 notch 状态 pill、像素/等宽字体、中文像素字体、二进制 01 背景、轻微颗粒、顶部 god-ray、可选有序抖动、黑色实体面板、细边框和柔和阴影。颜色只表达状态：橙=产品/注意，绿=完成，蓝=运行，青=提问，紫=探索，红=错误。避免通用 SaaS 卡片、霓虹赛博、渐变光球和营销页感，优先做可用的控制台/仪表盘。
 ```
 
 ## Implementation Checklist
 
-Before shipping a page or component in this style, check:
-
-- The first screen shows a real usable interface, not only marketing copy.
+- First screen shows a real usable interface, not only marketing copy.
+- Chinese headings use pixel-capable CJK fonts where possible.
+- Binary/ASCII texture does not cover readable content.
 - Text does not overflow on mobile or desktop.
 - Cards are not nested inside cards.
 - Black surfaces carry the structure; accents only express state.
-- Pixel/terminal effects do not reduce readability.
 - Motion has a reduced-motion fallback.
-- The UI remains understandable without grain, ASCII, or animation.
+- UI remains understandable without grain, god-rays, ASCII, or animation.
