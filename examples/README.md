@@ -14,8 +14,9 @@ For product intro pages, avoid a generic SaaS landing page. Build a real first-s
 - compact terminal or HUD surface
 - dense game/product rows
 - semantic status colors
+- pixel Chinese font stack when Chinese content is present
 - image-backed content cards only when they help the subject feel real
-- subtle grain, ASCII scatter, and scanline texture
+- subtle god-ray, 128px grain, 4x4 dither, and binary `0 1 + - * : .` scatter
 
 ## Verification
 
