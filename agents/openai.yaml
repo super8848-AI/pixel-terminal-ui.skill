@@ -1,0 +1,4 @@
+interface:
+  display_name: "像素终端 UI"
+  short_description: "Build dark macOS notch-inspired pixel terminal interfaces."
+  default_prompt: "Apply the pixel terminal UI style to this product."
