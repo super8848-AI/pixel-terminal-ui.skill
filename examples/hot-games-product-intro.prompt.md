@@ -10,9 +10,10 @@ Subject: 热门游戏介绍 / Hot Games Radar.
 The page should feel like a dark macOS-native terminal HUD mounted to the top of the operating system. The first viewport should show a black top-centered notch/status pill, a pixel terminal hero title, a live game radar panel, and real game cards with cover images or recognizable media. Use a compact dashboard structure instead of a generic marketing landing page.
 
 Design requirements:
-- dark black/near-black background with subtle grain, scanline, ASCII, or dither texture
-- pixel/mono title typography, system sans for readable body text
-- semantic colors only: green for online/ready, blue for running/trending, orange for hot/attention, cyan for discovery, red for warning
+- dark black/near-black background with subtle top god-rays, 128px grain, optional 4x4 ordered dither, and binary/ASCII scatter
+- binary scatter should use `0 1 + - * : .`, fade from a corner or behind the hero, and never cover readable text
+- pixel/mono title typography; for Chinese titles prefer `Zpix`, `Fusion Pixel`, `Ark Pixel`, or `Noto Sans Mono CJK SC`
+- semantic colors only: #d97757 orange for hot/product attention, #22c55e green for online/ready, #3b82f6 blue for running/trending, #06b6d4 cyan for discovery/questions, #a855f7 purple for exploration, red for warning
 - black glass-like panels with thin translucent borders and soft shadows
 - dense game cards with genre, platform, popularity, status, and short description
 - terminal-style side panel showing scan logs, rankings, or recommendation output
@@ -49,25 +50,4 @@ Primary game radar grid
 Focused game terminal detail panel
 Trending queue / scan logs
 Comparison or recommendation strip
-```
-
-## CSS Tokens To Start From
-
-```css
-:root {
-  --pt-bg: #111111;
-  --pt-bg-deep: #050505;
-  --pt-surface: #151518;
-  --pt-ink: #000000;
-  --pt-panel: rgba(14, 14, 16, 0.94);
-  --pt-border: rgba(255, 255, 255, 0.10);
-  --pt-text: #e5e5e5;
-  --pt-text-soft: rgba(255, 255, 255, 0.72);
-  --pt-text-dim: rgba(255, 255, 255, 0.42);
-  --pt-orange: #d97757;
-  --pt-green: #22c55e;
-  --pt-blue: #3b82f6;
-  --pt-cyan: #06b6d4;
-  --pt-red: #f87171;
-}
 ```
