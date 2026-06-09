@@ -33,8 +33,8 @@ Key traits:
 
 - Black or near-black surfaces first, decoration second.
 - Pixel/mono display typography for headings and status labels.
-- Chinese headings should use pixel-capable CJK fonts such as `Zpix`, `Fusion Pixel`, `Ark Pixel`, or `Noto Sans Mono CJK SC`.
-- Sparse binary/ASCII background uses `0 1 + - * : .`, usually faded from a corner.
+- Chinese headings should use pixel-capable CJK fonts such as `Zpix`, `Fusion Pixel`, `Ark Pixel`, or `Noto Sans Mono CJK SC`; body copy should stay in system Chinese fonts for clarity.
+- Sparse binary/ASCII background uses `0 1 + - * : .`, usually faded from a corner, with optional cyan pointer-proximity glow.
 - God-ray light, 128px grain, 4x4 ordered dither, and MacBook/screen fade masks are used subtly.
 - Color is semantic: orange attention/product, green done, blue running, cyan question, purple exploration, red error.
 - UI should feel useful before it feels stylish.
@@ -65,7 +65,8 @@ Key traits:
 ## Implementation Checklist
 
 - First screen shows a real usable interface, not only marketing copy.
-- Chinese headings use pixel-capable CJK fonts where possible.
+- Chinese headings use pixel-capable CJK fonts where possible; paragraph copy does not.
+- Pixel Chinese headings do not use glow/blur shadows that make glyphs fuzzy.
 - Binary/ASCII texture does not cover readable content.
 - Text does not overflow on mobile or desktop.
 - Cards are not nested inside cards.
