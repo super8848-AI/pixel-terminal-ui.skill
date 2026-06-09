@@ -3,6 +3,14 @@
 ## Base CSS
 
 ```css
+@font-face {
+  font-family: "Zpix";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/SolidZORO/zpix-pixel-font@master/website/zpix.woff2") format("woff2");
+}
+
 :root {
   --pt-bg: #111111;
   --pt-bg-deep: #050505;
@@ -28,7 +36,7 @@
   --pt-yellow: #f59e0b;
   --pt-red: #f87171;
   --pt-spring: cubic-bezier(.175, .885, .32, 1.1);
-  --pt-font-pixel: "Geist Pixel Square", "Departure Mono", "Press Start 2P", "Zpix", "Fusion Pixel 12px Monospaced SC", "Fusion Pixel", "Ark Pixel 12px zh_cn", "Noto Sans Mono CJK SC", ui-monospace, monospace;
+  --pt-font-pixel: "Zpix", "Geist Pixel Square", "Departure Mono", "Press Start 2P", "Fusion Pixel 12px Monospaced SC", "Fusion Pixel", "Ark Pixel 12px zh_cn", "Noto Sans Mono CJK SC", ui-monospace, monospace;
   --pt-font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
   --pt-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif;
 }
@@ -77,10 +85,19 @@
 
 .pt-pixel-title {
   font-family: var(--pt-font-pixel);
-  letter-spacing: .04em;
+  letter-spacing: 0;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: unset;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
   image-rendering: pixelated;
+  text-shadow: none;
+}
+
+.pt-body-copy {
+  font-family: var(--pt-font-sans);
+  letter-spacing: 0;
+  line-height: 1.65;
 }
 
 .pt-pill {
@@ -184,7 +201,7 @@
 
 ## Binary Scatter Canvas
 
-Use this for hero or pricing-card background texture. It mirrors the reference site's spirit: sparse `0 1 + - * : .` characters, a corner fade, and a cyan proximity glow.
+Use this for hero or pricing-card background texture. It mirrors the reference site's spirit: sparse `0 1 + - * : .` characters, a corner fade, and a cyan proximity glow. The glow is driven by mouse distance: characters near the pointer get higher alpha and a stronger cyan mix.
 
 ```html
 <canvas class="pt-binary-scatter" aria-hidden="true"></canvas>
