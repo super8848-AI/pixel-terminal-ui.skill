@@ -1,8 +1,8 @@
 # Pixel Terminal UI Skill
 
-A Codex skill for creating Vibe Island-inspired dark pixel terminal interfaces: compact black notch controls, pixel/mono typography, semantic live states, binary `01` scatter, god-ray/dither texture, and developer-tool density.
+A reusable skill for designing and implementing dark pixel terminal interfaces: compact black status surfaces, pixel/mono typography, semantic live states, binary `01` scatter, god-ray/dither texture, and dense developer-tool layouts.
 
-The style is distilled from the public Vibe Island website and generalized for coding products, dashboards, agent monitors, command centers, approval panels, game pages, and product intro pages. Do not copy Vibe Island assets; reuse the design principles.
+It works well for coding products, dashboards, agent monitors, command centers, approval panels, game pages, and product intro pages. The goal is a transferable design language, not a recreation of any single branded surface.
 
 ## Install
 
@@ -15,19 +15,25 @@ npx skills add super8848-AI/pixel-terminal-ui.skill
 Use this skill when you want:
 
 - 像素终端风 UI
-- Vibe Island / Open Island inspired UI
-- macOS notch or Dynamic Island style control surface
+- macOS notch or compact status-surface style control UI
 - dark terminal dashboard
-- AI coding agent monitor
+- AI agent monitor
 - developer command center
 - compact permission / approval panel
 - game, tool, or product intro page with terminal HUD styling
+
+## What You Get
+
+- A compact control-surface visual language instead of a generic landing-page layout
+- Reusable prompt and style references for design, frontend, and image workflows
+- Clear typography, color, motion, and texture rules for pixel-terminal UI
+- Practical guidance for Chinese interfaces, including pixel-capable CJK heading fonts
 
 ## Design DNA
 
 The core direction is:
 
-> A dark macOS-native pixel terminal UI: a compact black control surface for developer workflows, blending notch-like pill morphology, pixel/terminal typography, semantic agent status colors, sparse binary scatter, grain, god-ray/dither texture, and restrained glass depth.
+> A dark pixel terminal UI: a compact black control surface blending pill-like status surfaces, pixel/terminal typography, semantic status colors, sparse binary scatter, grain, god-ray/dither texture, and restrained glass depth.
 
 Key traits:
 
@@ -59,7 +65,13 @@ Key traits:
 ## Quick Prompt
 
 ```text
-做一个参考 Vibe Island 官网气质但不复制素材的暗黑像素终端风 macOS 原生控制界面：纯黑 notch 状态 pill、像素/等宽字体、中文像素字体、二进制 01 背景、轻微颗粒、顶部 god-ray、可选有序抖动、黑色实体面板、细边框和柔和阴影。颜色只表达状态：橙=产品/注意，绿=完成，蓝=运行，青=提问，紫=探索，红=错误。避免通用 SaaS 卡片、霓虹赛博、渐变光球和营销页感，优先做可用的控制台/仪表盘。
+Design a dark pixel terminal interface with a compact black status surface, pixel or monospace display typography, semantic status colors, subtle `0 1 + - * : .` scatter, light grain, soft god-rays, and restrained motion. Prioritize a real usable dashboard or control panel over a generic marketing page.
+```
+
+## Quick Prompt (ZH)
+
+```text
+做一个暗黑像素终端风 macOS 原生控制界面：纯黑 notch 状态 pill、像素/等宽字体、中文像素字体、二进制 01 背景、轻微颗粒、顶部 god-ray、可选有序抖动、黑色实体面板、细边框和柔和阴影。颜色只表达状态：橙=产品/注意，绿=完成，蓝=运行，青=提问，紫=探索，红=错误。避免通用 SaaS 卡片、霓虹赛博、渐变光球和营销页感，优先做可用的控制台/仪表盘。
 ```
 
 ## Implementation Checklist

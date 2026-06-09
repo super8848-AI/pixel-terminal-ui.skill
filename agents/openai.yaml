@@ -1,4 +1,4 @@
 interface:
   display_name: "像素终端 UI"
-  short_description: "Build Vibe Island-inspired dark pixel terminal interfaces."
-  default_prompt: "Apply the Vibe Island-inspired pixel terminal UI style to this product, with pixel Chinese typography when Chinese text is used."
+  short_description: "Build dark pixel terminal interfaces with compact status surfaces."
+  default_prompt: "Apply the pixel terminal UI style to this product, with pixel Chinese typography when Chinese text is used."

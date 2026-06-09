@@ -201,7 +201,7 @@
 
 ## Binary Scatter Canvas
 
-Use this for hero or pricing-card background texture. It mirrors the reference site's spirit: sparse `0 1 + - * : .` characters, a corner fade, and a cyan proximity glow. The glow is driven by mouse distance: characters near the pointer get higher alpha and a stronger cyan mix.
+Use this for hero or pricing-card background texture: sparse `0 1 + - * : .` characters, a corner fade, and a cyan proximity glow. The glow is driven by mouse distance: characters near the pointer get higher alpha and a stronger cyan mix.
 
 ```html
 <canvas class="pt-binary-scatter" aria-hidden="true"></canvas>

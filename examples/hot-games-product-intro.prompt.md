@@ -7,7 +7,7 @@ Use the pixel-terminal-ui style to create a standalone responsive HTML page intr
 
 Subject: 热门游戏介绍 / Hot Games Radar.
 
-The page should feel like a dark macOS-native terminal HUD mounted to the top of the operating system. The first viewport should show a black top-centered notch/status pill, a pixel terminal hero title, a live game radar panel, and real game cards with cover images or recognizable media. Use a compact dashboard structure instead of a generic marketing landing page.
+The page should feel like a dark pixel-terminal HUD with a compact product control surface. The first viewport should show a black top-centered status pill or compact control bar, a pixel terminal hero title, a live game radar panel, and real game cards with cover images or recognizable media. Use a compact dashboard structure instead of a generic marketing landing page.
 
 Design requirements:
 - dark black/near-black background with subtle top god-rays, 128px grain, optional 4x4 ordered dither, and binary/ASCII scatter

@@ -2,11 +2,11 @@
 
 ## One-Line Style
 
-Dark macOS-native pixel terminal UI: a compact black control surface for developer workflows, blending notch-like pill morphology, pixel/terminal typography, semantic agent status colors, sparse binary scatter, grain, god-ray/dither texture, and restrained glass depth.
+Dark pixel terminal UI: a compact black control surface blending pill-like status surfaces, pixel/terminal typography, semantic status colors, sparse binary scatter, grain, god-ray/dither texture, and restrained glass depth.
 
 ## Visual DNA
 
-- **Native control surface**: the UI should feel mounted to the OS: menu bar, notch, top overlay, command palette, dock-like status, or compact dashboard.
+- **Native control surface**: the UI should feel mounted to a real product surface: menu bar, top overlay, command palette, dock-like status, compact dashboard, or floating control strip.
 - **Pixel terminal layer**: use pixel display fonts, monospaced labels, ASCII/binary animation, code diffs, terminal rows, crisp icons, and low-resolution texture.
 - **Black object first**: the core surface is an object: pure black or ink black, with soft shadow, faint stroke, and limited translucency.
 - **State over decoration**: color appears because something is happening, not because the page needs flair.
@@ -49,16 +49,16 @@ Use a neutral black base with semantic accents.
 
 ## Semantic Color Mapping
 
-Use the same restraint as the reference site: one accent per state or tool identity.
+Use restrained accents: one accent per state or tool identity.
 
 - Base text: `#e5e5e5`; muted text: white at 42-72% opacity.
 - Product/action orange: `#d97757`.
-- Done/approved/Codex green: `#22c55e` or bright `#4ade80`.
-- Running/jump/Gemini blue: `#3b82f6` or bright `#60a5fa`.
+- Done/approved green: `#22c55e` or bright `#4ade80`.
+- Running/active blue: `#3b82f6` or bright `#60a5fa`.
 - Permission/attention orange: `#f97316`.
 - Question/interactive scatter cyan: `#06b6d4`.
-- Exploration/Cursor purple: `#a855f7`.
-- OpenCode/alternate warm yellow: `#f59e0b`.
+- Exploration purple: `#a855f7`.
+- Alternate tool/action yellow: `#f59e0b`.
 - Errors or deleted diff: soft red text with dark red backing, not full neon red blocks.
 
 ## Typography
@@ -74,9 +74,9 @@ Use the same restraint as the reference site: one accent per state or tool ident
 
 ## Layout Rules
 
-- Use a top-centered pill/notch for primary live status when the product allows it.
+- Use a top-centered pill or compact status surface for primary live status when the product allows it.
 - If expanded, the panel should feel like the pill grew downward, not like an unrelated card appeared.
-- Use notch dimensions close to real utility surfaces: compact around `240px x 36px`; expanded panels can grow to `420-520px` wide with `14px` bottom radius.
+- If using a notch-like surface, keep dimensions close to real utility surfaces: compact around `240px x 36px`; expanded panels can grow to `420-520px` wide with `14px` bottom radius.
 - Rows should be dense but calm: 8-12px vertical padding, 6-10px gaps, subtle dividers.
 - Buttons are compact, icon-capable, and action-specific. Use keyboard hints for developer flows.
 - Avoid nested cards. Use black surfaces, rows, strips, and segmented controls.
@@ -89,7 +89,7 @@ Use the same restraint as the reference site: one accent per state or tool ident
   - waiting: breathing/pulsing dot or two pause bars.
   - text cycling: ASCII scramble using `01+-*:.`.
   - expanded panel: springy height/width morph from the pill.
-- Use the reference spring feel: `cubic-bezier(.175, .885, .32, 1.1)` for pill growth and hover lifts.
+- A good default spring feel is `cubic-bezier(.175, .885, .32, 1.1)` for pill growth and hover lifts.
 - Provide reduced-motion fallbacks.
 
 ## Texture
@@ -109,4 +109,4 @@ Use subtle, almost background-level texture:
 - Decorative gradient blobs/orbs.
 - Marketing-heavy hero pages when a working tool should be shown.
 - Random purple-blue gradients dominating the screen.
-- Copying Apple/Vibe Island assets directly.
+- Copying branded assets directly.
