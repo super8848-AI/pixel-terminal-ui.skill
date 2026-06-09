@@ -64,12 +64,13 @@ Use the same restraint as the reference site: one accent per state or tool ident
 ## Typography
 
 - Latin display/headline: `Geist Pixel Square`, `Departure Mono`, `Press Start 2P`, or a similar pixel/mono display face.
-- Chinese display/headline: `Zpix`, `Fusion Pixel 12px Monospaced SC`, `Fusion Pixel`, `Ark Pixel 12px zh_cn`, `Noto Sans Mono CJK SC`, then `PingFang SC` fallback. For Chinese headings, prefer true bitmap/pixel CJK fonts over smooth system sans.
+- Chinese display/headline: `Zpix`, `Fusion Pixel 12px Monospaced SC`, `Fusion Pixel`, `Ark Pixel 12px zh_cn`, `Noto Sans Mono CJK SC`, then `PingFang SC` fallback. For Chinese headings, prefer true bitmap/pixel CJK fonts over smooth system sans. A known working web source for Zpix is `https://cdn.jsdelivr.net/gh/SolidZORO/zpix-pixel-font@master/website/zpix.woff2`.
 - Code/status: `JetBrains Mono`, `SF Mono`, `ui-monospace`.
 - Body/UI: `-apple-system`, `BlinkMacSystemFont`, `SF Pro Text`, `Segoe UI`, `PingFang SC`, `Noto Sans CJK SC`, `system-ui`.
 - Do not use negative letter spacing. Pixel headings can use slight positive tracking.
 - Keep hero-scale type only for hero sections. Use small tight labels inside panels.
-- For Chinese pixel fonts, keep line-height at `1.45-1.7`; avoid very small Chinese body text below 12px unless it is a tag.
+- For Chinese pixel fonts, keep line-height at `1.45-1.7`; use them for headings, short labels, chips, and hero words. Do not use pixel Chinese fonts for paragraph body copy; use system Chinese fonts for readability.
+- Avoid glow or blur shadows on Chinese pixel headlines. If the glyphs look fuzzy, remove `text-shadow`, avoid CSS transforms on the text itself, and prefer integer-ish font sizes with `-webkit-font-smoothing: none`.
 
 ## Layout Rules
 
