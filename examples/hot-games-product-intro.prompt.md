@@ -13,6 +13,9 @@ Design requirements:
 - dark black/near-black background with subtle top god-rays, 128px grain, optional 4x4 ordered dither, and binary/ASCII scatter
 - binary scatter should use `0 1 + - * : .`, fade from a corner or behind the hero, and never cover readable text
 - pixel/mono title typography; for Chinese titles prefer `Zpix`, `Fusion Pixel`, `Ark Pixel`, or `Noto Sans Mono CJK SC`
+- use pixel Chinese only for headings and short labels; body paragraphs should use system Chinese fonts for readability
+- avoid text-shadow/glow on Chinese pixel headings so the glyphs stay crisp
+- binary scatter can glow cyan around the pointer by increasing alpha for characters near the mouse position
 - semantic colors only: #d97757 orange for hot/product attention, #22c55e green for online/ready, #3b82f6 blue for running/trending, #06b6d4 cyan for discovery/questions, #a855f7 purple for exploration, red for warning
 - black glass-like panels with thin translucent borders and soft shadows
 - dense game cards with genre, platform, popularity, status, and short description
